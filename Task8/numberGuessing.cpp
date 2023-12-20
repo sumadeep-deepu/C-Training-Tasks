@@ -7,7 +7,7 @@ int main(){
 	int randomNumber=rand()%100+1;
 	int guessingNumber;
 	int noOfAttempts=1; 	
-	cout<<"enter the guessing number : ";
+	cout<<"enter the guessing number between (1 to 100): ";
 	cin>>guessingNumber;
 	while(true){
 	if(guessingNumber==randomNumber){
