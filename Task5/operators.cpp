@@ -1,8 +1,6 @@
 #include<iostream>
 using namespace std;
-int main(){
-
-	//Arthematic Operators
+void arthematicOperators(){
 	cout<<"Arthematic operators : "<<endl;
 	int number1,number2;
 	cout<<"enter number 1 : ";
@@ -13,9 +11,9 @@ int main(){
 	cout<<"the difference  of two numbers is : "<<number1-number2<<endl;
 	cout<<"the product of two numbers is : "<<number1*number2<<endl;
 	cout<<"the quotient of  two numbers is : "<<number1/number2<<endl;
-	cout<<"the remainder of two numbers is : "<<number1%number2<<endl;
-	
-	//Relational Operators
+	cout<<"the remainder of two numbers is : "<<number1%number2<<end;
+}
+void relationalOperators(){
 	cout<<endl;
 	cout<<"Relational Operators : "<<endl;
 	int number3,number4;
@@ -27,9 +25,9 @@ int main(){
 	cout<<"Equality : "<<(number3==number4)<<endl;
 	cout<<"In-Equality : "<<(number3!=number4)<<endl;
 	cout<<"greater than : "<<(number3>number4)<<endl;
-	cout<<"less than : "<<(number3<number4)<<endl; 
-
-	//Logical Operators
+	cout<<"less than : "<<(number3<number4)<<endl;
+}
+void logicalOperators(){
 	cout<<endl;
 	cout<<"Logical operators : "<<endl;
 	bool a,b;
@@ -41,8 +39,8 @@ int main(){
 	cout<<"Logical OR : "<<(a||b)<<endl;
 	cout<<"Logical NOT for first value : "<<!(a)<<endl;
 	cout<<"Logical NOT for second value : "<<!(b)<<endl;
-	
-	//Assignment Operators
+}
+void assignmentOperators(){
 	cout<<endl;
 	cout<<"Assignment Operators : "<<endl;
 	int x=5;
@@ -54,6 +52,14 @@ int main(){
 	x%=2;
 	cout<<"using %= operator : "<<x<<endl;
 	cout<<"Final value of x  : "<<x<<endl;
+}
+int main(){
+	arthematicOperators();
 
+	relationalOperators();
+
+	logicalOperators();
+
+	assignmentOperators();
 return 0;
 }
