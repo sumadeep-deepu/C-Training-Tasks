@@ -2,10 +2,10 @@
 #include <string>
 using namespace std;
 const int maxProducts = 100;
-union Product
+struct Product
 {
 	int productId;
-	char name[50];
+	string name;
 	double price;
 	int quantity;
 };
