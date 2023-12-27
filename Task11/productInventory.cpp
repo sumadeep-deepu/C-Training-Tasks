@@ -38,7 +38,7 @@ void displayProductInfo(Product inventory[], int id, int count)
 			cout << "Product ID : " << inventory[i].productId << " Product Name : " << inventory[i].name << " Price : " << inventory[i].price << " Quantity : " << inventory[i].quantity << endl;
 		}
 		else
-			cout << "invalid ID or produt not found!!";
+			cout << "invalid ID or produt not found!!"<<endl;
 	}
 }
 void updateQuantity(Product inventory[], int id, int count)
@@ -55,7 +55,7 @@ void updateQuantity(Product inventory[], int id, int count)
 			return;
 		}
 		else
-			cout << "invalid ID or product not found";
+			cout << "invalid ID or product not found"<<endl;
 	}
 }
 void displayAllProducts(Product inventory[], int count)
