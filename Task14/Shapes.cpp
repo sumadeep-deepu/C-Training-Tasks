@@ -35,10 +35,16 @@ public:
 	}
 };
 int main()
-{
-	Shape *cir = new Circle(2.45);
-	Shape *rect = new Rectangle(5, 6);
+{	
+	double radius;
+	long length,breadth;
+	cout<<"enter the radius : ";
+ 	cin>>radius;
+	Shape *cir = new Circle(radius);
 	cir->calculateArea();
+	cout<<"enter length and breadth : ";
+	cin>>length,breadth;
+	Shape *rect = new Rectangle(length,breadth);
 	rect->calculateArea();
 	return 0;
 }
