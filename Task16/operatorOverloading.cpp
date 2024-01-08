@@ -52,7 +52,7 @@ int main()
 	cout << "n1-n2 : ";
 	res_sub.display();
 
-	cout << "n1*n1 : ";
+	cout << "n1*n2 : ";
 	res_mul.display();
 
 	cout << "n1/n2 : ";
