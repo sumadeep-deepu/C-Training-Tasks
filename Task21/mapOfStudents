@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+#include <map>
+using namespace std;
+int main()
+{
+	map<string, char> students;
+	students.insert(pair<string, char>("sumadeep", 'A'));
+	students.insert(pair<string, char>("deepak", 'E'));
+	students.insert(pair<string, char>("charan", 'D'));
+	students.insert(pair<string, char>("ubedulla", 'C'));
+	students.insert(pair<string, char>("manidhar", 'F'));
+
+	for (auto pair : students)
+	{
+		cout << pair.first << " - " << pair.second << endl;
+	}
+	string studentName;
+	cout << "enter the student name to display grade : ";
+	cin >> studentName;
+	auto it = students.find(studentName);
+	if (it != students.end())
+	{
+		cout << "the grade of " << studentName << " is : " << it->second << endl;
+	}
+	else
+	{
+		cout << "the grade is not avaialable for " << studentName << endl;
+	}
+	return 0;
+}
