@@ -1,0 +1,9 @@
+#ifndef stringOperations_h
+#define stringOperations_h
+#include <string>
+using namespace std;
+
+string reverse(string str);
+string concate(string str1, string str2);
+string substr(string str, int start, int end);
+#endif
